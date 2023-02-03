@@ -1,0 +1,140 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	display: grid;
+	grid-template-areas: "hd" "mainConverter" "footer";
+background-image: url(./1.png);
+	background-size: cover;
+}
+
+.header {
+	grid-area: hd;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.result {
+	color: whitesmoke;
+}
+
+.title {
+	grid-area: hd;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	align-content: center;
+	flex-direction: row;
+	margin: 0 auto;
+	font-size: 1.0 rem;
+	color: red;
+	font-size: 30px;
+}
+
+.title {
+	margin-top: 50px;
+}
+
+.mainConverter {
+	grid-area: mainConverter;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	flex-wrap: nowrap;
+}
+
+.inputSelectLeft,
+.inputSelectRight {
+	grid-area: mainConverter;
+	display: flex;
+	flex-direction: row;
+	margin-top: 20px;
+}
+
+.inputLeft {
+	height: 25px;
+}
+
+.inputRight {
+	height: 25px;
+}
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.currencyUsd {
+	color: rgb(185, 180,224);
+	font-size: 30px;
+	align-items: center;
+	justify-content: center;
+	align-content: center;
+	flex-direction: row;
+	margin: 0 auto;
+	margin-top: 20px;
+	margin-left: 20px;
+}
+
+.currencyEur {
+	color: rgb(185, 180,224);
+	font-size: 30px;
+	align-items: center;
+	justify-content: center;
+	align-content: center;
+	flex-direction: row;
+	margin: 0 auto;
+	margin-top: 20px;
+	margin-left: 20px;
+}
+
+.usdBuy {
+	display: flex;
+	flex-direction: row;
+	color: whitesmoke;
+	font-size: 25px;
+}
+
+.usdSale {
+	display: flex;
+	flex-direction: row;
+	color: whitesmoke;
+	font-size: 25px;
+}
+
+.eurBuy {
+   	display: flex;
+	flex-direction: row;
+	color: whitesmoke;
+	font-size: 25px;
+}
+
+.eurSale {
+	display: flex;
+	flex-direction: row;
+
+	color: whitesmoke;
+	font-size: 25px;
+}
+
+.footer {
+	grid-area: footer;
+	color: whitesmoke;
+	grid-template: 100%;
+	margin: 0 auto;
+margin-top: 30px;
+	font-size: 20px;
+text-align: center;
+color: silver;
+}
+
+.footer p {
+ margin-top: 15px;
+}

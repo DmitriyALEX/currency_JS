@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="./styles.css">
+	 <!-- <script src="./script.js" defer></script> -->
+</head>
+
+<body class="documentAll">
+<!-- <div class="documentAll"> -->
+	<div class="header">
+		<h1 class="title">CURRENCY CONVERTER</h1>
+			<div id="mainUsd">
+				<p class="currencyUsd">USD</p>
+				<div class="usdBuy">Buy:
+					<div id="usdBuy"></div>
+				</div>
+
+				<div class="usdSale">Sale: 
+					<div id="usdSale"></div>
+				</div>
+			</div>
+	
+			<div id="mainEur">
+				<p class="currencyEur">EUR</p>
+				<div class="eurBuy">Buy:
+					<div id="eurBuy"></div>
+				</div>
+
+				<div class="eurSale">Sale:
+					<div id="eurSale"></div>
+				</div>
+			</div>	
+	</div>
+
+	<div class="mainConverter">
+			<div class="inputSelectLeft">
+				<input type="number" id="inputLeft" class="inputLeft" value="">
+				<select id="selectLeft">
+				    <option value="UAH">UAH</option>
+				    <option value="USD">USD</option>
+				    <option value="EUR">EUR</option>
+		    	</select>
+			</div>
+
+			<div class="inputSelectRight">
+				<input type="number" id="inputRight" class="inputRight" value="">
+				<select id="selectRight">
+				    <option value="UAH">UAH</option>
+				    <option value="USD">USD</option>
+				    <option value="EUR">EUR</option>
+				</select> 
+			</div>	
+		</div>
+		<div id="result" class="result"></div>
+	                <div class="footer">
+	                  	<p>Курси валют оновлювлються</p>
+	                  	<p>1 раз на 5 хвилин</p>
+	                  	<p>згідно з курсами НБУ</p>
+
+	                  </div>
+<!-- </div> -->
+ <script src="./script.js"></script>
+</body>
+</html>
